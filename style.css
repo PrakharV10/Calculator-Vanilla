@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --dark-bg: #22252d;
+  --off-dark: #292d36;
+  --btn-bg: #272b33;
+  --green-btn: #26f2cd;
+  --red-btn: #ec6767;
+  --white-text: #ffffff;
+  --off-white: #f3f3f3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--white-text);
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  margin: 2rem auto 0;
+  height: 90vh;
+  width: 100vw;
+  max-width: 375px;
+  background-color: var(--dark-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.output-area {
+  flex: 45%;
+  text-align: right;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.input-area {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 1rem;
+  background-color: var(--off-dark);
+  flex: 55%;
+}
+
+.output-area .calculation {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--off-white);
+}
+
+.output-area .output {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.input-area div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  margin: 0.5rem;
+  background-color: var(--btn-bg);
+  color: var(--white-text);
+  border: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  height: 70px;
+  width: 70px;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--dark-bg);
+}
+
+.green-btn {
+  color: var(--green-btn);
+}
+
+.red-btn {
+  color: var(--red-btn);
+}
