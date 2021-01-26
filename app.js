@@ -7,9 +7,23 @@ const opOne = document.querySelector(".running-total");
 const operand = document.querySelector(".previous-operator");
 const opTwo = document.querySelector(".int-buffer");
 
+// Service worker 
+
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+      navigator.serviceWorker
+        .register("/serviceWorker.js")
+        .then(res => console.log("service worker registered"))
+        .catch(err => console.log("service worker not registered", err))
+    })
+}
+
+
+// Actual coding
 document.querySelector(".input-area").addEventListener("click", function (event) {
-    // console.log(event.target.innerText);
-    handleClick(event.target.innerText);
+    if (event.target.tagName === 'BUTTON') {
+        handleClick(event.target.innerText); 
+    }
 })
 
 function rerender() {

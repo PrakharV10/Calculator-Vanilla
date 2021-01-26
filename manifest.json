@@ -1,0 +1,24 @@
+{
+    "short_name" : "Calc.pv",
+    "name" : "Calculator.pv",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+          "src": "./src/logo192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+            "src": "./src/logo512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+
+    "start_url": "/index.html?source=pwa",
+    "background_color": "#22252d",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#292d36"
+}
+
